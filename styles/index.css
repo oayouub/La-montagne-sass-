@@ -14,6 +14,11 @@ header {
   flex-direction: column;
   height: 90vh;
 }
+@media screen and (max-width: 801px) {
+  header {
+    display: none;
+  }
+}
 header h1 {
   font-size: 3.5rem;
   width: 55%;
@@ -32,6 +37,11 @@ nav {
   grid-template-columns: 50% 50%;
   height: 10vh;
   width: 70%;
+}
+@media screen and (max-width: 801px) {
+  nav {
+    width: 90%;
+  }
 }
 nav .menu {
   display: flex;
@@ -61,6 +71,11 @@ nav .icon {
   color: white;
   font-family: font2, sans-serif;
 }
+@media screen and (max-width: 601px) {
+  nav .icon {
+    display: none;
+  }
+}
 nav .icon li {
   font-size: 0.7rem;
   padding: 0 30px;
@@ -85,11 +100,22 @@ nav .icon li {
   letter-spacing: 2px;
   text-align: center;
 }
+@media screen and (max-width: 601px) {
+  .section1 h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+}
 .section1 .p-lorem {
   font-size: 0.8rem;
   width: 40%;
   text-align: center;
   line-height: 1.8rem;
+}
+@media screen and (max-width: 601px) {
+  .section1 .p-lorem {
+    width: 90%;
+  }
 }
 .section1 img {
   width: 80%;
@@ -107,6 +133,14 @@ nav .icon li {
 .section2 {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 601px) {
+  .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .section2 .section2-container {
   display: flex;
@@ -127,6 +161,11 @@ nav .icon li {
   font-family: font1, sans-serif;
   letter-spacing: 1px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 601px) {
+  .section2 .section2-container h2 {
+    width: 90%;
+  }
 }
 .section2 .section2-container img {
   width: 80%;
@@ -191,12 +230,31 @@ footer {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 601px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 801px) {
+  footer {
+    width: 90%;
+  }
+}
 footer form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin: 0 40px;
   padding: 60px 0;
+}
+@media screen and (max-width: 801px) {
+  footer form {
+    margin: 0;
+    width: 90%;
+  }
 }
 footer form label {
   font-size: 0.7rem;
@@ -225,7 +283,6 @@ footer form #valider {
   font-size: 0.6rem;
   font-family: font2, sans-serif;
   font-weight: 600;
-  width: 30%;
   text-align: center;
   margin-top: 20px;
 }
@@ -234,6 +291,12 @@ footer .contact {
   grid-template-rows: 25% 25% 25% 25%;
   border-left: 1px solid rgb(216, 216, 216);
   height: 100%;
+}
+@media screen and (max-width: 801px) {
+  footer .contact {
+    width: 100%;
+    height: 600px;
+  }
 }
 footer .contact .contact-content {
   display: grid;
@@ -283,4 +346,9 @@ body .page {
   width: 70%;
   overflow: hidden;
   background-color: white;
+}
+@media screen and (max-width: 801px) {
+  body .page {
+    width: 90%;
+  }
 }/*# sourceMappingURL=index.css.map */

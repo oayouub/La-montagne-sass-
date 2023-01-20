@@ -13,12 +13,19 @@
         width: 45%;
         letter-spacing: 2px;
         text-align: center;
+        @media screen and (max-width: 601px){
+            width: 90%;
+            font-size: 2rem;
+        }
     }
     .p-lorem{
         font-size: 0.8rem;
         width: 40%;
         text-align: center;
         line-height: 1.8rem;
+        @media screen and (max-width: 601px){
+            width: 90%;
+        }
     }
     img{
         width: 80%;

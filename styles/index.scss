@@ -21,7 +21,9 @@ body{
         width: 70%;
         overflow: hidden;
         background-color: $color1;
-
+        @media screen and (max-width: 801px){
+            width: 90%;
+        }
         
     }
 }
